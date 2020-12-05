@@ -1,7 +1,7 @@
 use crate::layer::Layer;
 
 pub struct Context {
-	layers: Vec<Layer>
+	layers: Vec<&'static Layer>
 }
 
 impl Context {
@@ -11,7 +11,7 @@ impl Context {
 		}
 	}
 
-	pub fn add_layer(&mut self, layer: Layer) {
+	pub fn add_layer(&mut self, layer: &'static Layer) {
 		self.layers.push(layer);
 	}
 }
