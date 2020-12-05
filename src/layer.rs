@@ -1,4 +1,4 @@
-use crate::widgets::Widget;
+use crate::widgets::prelude::Widget;
 
 #[derive(Default)]
 pub struct Layer {
