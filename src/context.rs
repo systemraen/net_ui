@@ -1,16 +1,13 @@
 use crate::layer::Layer;
 
 pub struct Context {
-	layers: Vec<&'static Layer>
+	layers: Vec<&'static Layer>,
 }
 
 impl Context {
 	pub fn new() -> Self {
-		Context {
-			layers: vec![]
-		}
+		Context { layers: vec![] }
 	}
-
 	pub fn add_layer(&mut self, layer: &'static Layer) {
 		self.layers.push(layer);
 	}
