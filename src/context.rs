@@ -18,6 +18,10 @@ impl Context {
 	}
 
 	pub fn draw(&self, gfx: &mut Graphics) {
+		// maybe check some sort of clock, from qs maybe?
 
+		for l in &self.layers {
+			l.draw(gfx);
+		}
 	}
 }

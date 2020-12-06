@@ -1,5 +1,7 @@
+use quicksilver::Graphics;
+
 pub trait Widget {
-	fn draw(&self);
+	fn draw(&self, gfx: &mut Graphics);
 	fn reposition(&self, x: u32, y: u32) {
 		//self.x; #todo: figure out how to use WidgetData here
 	}
