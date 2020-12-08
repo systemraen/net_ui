@@ -1,7 +1,6 @@
-pub mod context;
-pub mod layer;
+pub mod structs;
 pub mod layers;
 pub mod widgets;
 
-pub use context::Context;
-pub use layer::Layer;
+pub use structs::context::Context;
+pub use structs::layer::Layer;

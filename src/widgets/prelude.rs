@@ -1,24 +1,9 @@
-use quicksilver::Graphics;
 
-pub trait Widget {
-	fn draw(&self, gfx: &mut Graphics);
-	fn reposition(&self, x: u32, y: u32) {
-		//self.x; #todo: figure out how to use WidgetData here
-	}
-	fn enable(&self) {}
-	fn disable(&self) {}
-	fn toggle_active(&self) {} //interactability 
-	fn toggle_vis(&self) {}
-	fn hide(&self) {}
-	fn show(&self) {}
-}
+pub use super::button;
+pub use crate::structs::widget_data::WidgetData;
 
-pub struct WidgetData {
-	x: u32,
-	y: u32,
-	w: u32,
-	h: u32
-}
+
+
 
 /*
 todo
