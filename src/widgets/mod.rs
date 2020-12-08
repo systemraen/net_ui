@@ -1,5 +1,9 @@
 pub mod prelude;
 pub mod button;
+
+pub use button::Button;
+
+//#todo: figure out where to put this trait
 use quicksilver::{Graphics, graphics::Color};
 
 pub trait Widget {

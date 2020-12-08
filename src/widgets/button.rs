@@ -1,7 +1,7 @@
 use {super::Widget, crate::structs::widget_data::WidgetData /* (idk...) */, quicksilver::{Graphics, graphics::Color}};
 
 pub struct Button {
-	data: WidgetData,
+	pub data: WidgetData,
 }
 
 impl Widget for Button {

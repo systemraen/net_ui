@@ -3,16 +3,16 @@ use {
 	quicksilver::{graphics::Color, Graphics},
 };
 
-pub struct Context<'a,'b: 'a> {
-	layers: Vec<&'a Layer<'b>>, // i want this to live as long as the vec contains it
+pub struct Context {
+	layers: Vec<Layer>, // i want this to live as long as the vec contains it
 }
 
-impl<'a,'b: 'a> Context<'a,'b> {
+impl Context {
 	pub fn new() -> Self {
 		Context { layers: vec![] }
 	}
 
-	pub fn add_layer(&mut self, layer: &'static Layer) {
+	pub fn add_layer(&mut self, layer: Layer) {
 		self.layers.push(layer);
 	}
 

@@ -1,11 +1,11 @@
 use {crate::widgets::Widget, quicksilver::graphics::Color, quicksilver::Graphics};
 
 #[derive(Default)]
-pub struct Layer<'a> {
-	pub widgets: Vec<Box<&'a Widget>>,
+pub struct Layer {
+	pub widgets: Vec<Box<dyn Widget>>,
 }
 
-impl<'a> Layer<'a> {
+impl Layer {
 	pub fn new() -> Self {
 		Layer { widgets: vec![] }
 	}
