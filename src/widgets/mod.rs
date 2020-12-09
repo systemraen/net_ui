@@ -1,4 +1,3 @@
-pub mod prelude;
 pub mod button;
 
 pub use button::Button;
